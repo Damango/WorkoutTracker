@@ -1,0 +1,67 @@
+.landing-page-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+
+.column-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+
+.section-column{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+width: 500px;
+height: 750px;
+background-color: black;
+}
+
+
+.workouts{
+    background-color: #1226dd;
+    transition: 0.3s;
+}
+
+.workouts:hover{
+    background-color: #0617b1;
+    cursor: pointer;
+}
+
+.section-column:hover .section-title{
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.nutrition{
+    background-color: #2ecc71;
+}
+
+.analytics{
+    background-color: #e74c3c;
+}
+
+.section-title{
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+
+}

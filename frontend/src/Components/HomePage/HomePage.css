@@ -1,0 +1,35 @@
+.home-page-container{
+    position: relative;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+.selector-container{
+    position: relative;
+    width: 90%;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.app-selector{
+    top:50%;
+    transform: translateY(-50%);
+    position: relative;
+    background-color: black;
+    width: 350px;
+    height: 450px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+

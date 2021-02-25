@@ -1,0 +1,44 @@
+
+.category-button{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 19px;
+  
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 130px;
+    color: white;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-style: none;
+    
+    transition: 0.3s;
+}
+
+.category-button:hover{
+    cursor: pointer;
+}
+
+.category-button-selected{
+    position: relative;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 19px;
+    border-style: none;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 130px;
+    color: white;
+    border-radius: 3px;
+   top: -15px;
+    margin-right: 20px;
+    border-style: none;
+    transition: 0.3s;
+}
+
+.category-button-selected:hover{
+    cursor: pointer;
+}

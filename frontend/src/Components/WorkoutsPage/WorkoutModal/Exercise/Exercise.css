@@ -1,0 +1,101 @@
+
+
+.exercise-wrapper{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2f3640;
+    width: 100%;
+    height: 120px;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.exercise-title{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.exercise-categories{
+    margin-right: 20px;
+}
+
+.exercise-category{
+    padding: 5px 10px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+.total-sets{
+    margin-right: 20px;
+    font-family: "Fira Sans";
+    font-size: 19px;
+}
+
+.total-volume{
+    margin-right: 20px;
+    font-family: "Fira Sans";
+    font-size: 19px;
+}
+
+.exercise-header div{
+    display: inline-block;
+}
+
+.sets-editor-container{
+    position: absolute;
+
+    bottom: 20px;
+    height: 50px;
+    display: block;
+}
+
+
+.set-block{
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-right: 15px;
+    color: black;
+    border-radius: 2px;
+}
+
+.add-set-button{
+    position: absolute;
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 20px;
+    border-style: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.set-add-container{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+
+.set-input-container{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.sets-input{
+    padding: 10px;
+}
+
+
+
+.set-input-container span{
+    display: block;
+    position: absolute;
+    top: -20px;
+}

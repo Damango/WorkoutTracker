@@ -1,0 +1,77 @@
+.workouts-page-container{
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.add-workout-button{
+    background-color: rgb(0, 60, 255);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+}
+
+.create-workout-button{
+    background-color:#2ecc71;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-style: none;
+}
+
+
+.workouts-container{
+    position: relative;
+    height: 80%;
+
+    overflow-y: scroll;
+}
+
+.left-view-container{
+    height: 100%;
+    width: 40%;
+    padding: 30px;
+    padding-left: 75px;
+   
+    float: left;
+    
+}
+
+.right-view-container{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    background-color: red;
+    float: right;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #2f3640;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4f555d;
+  }
