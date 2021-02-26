@@ -50,6 +50,7 @@ const WorkoutModal = (props) => {
     function addNewExercise() {
         if (newExercise === 0) {
             setNewExercise(1)
+            //Test Comment
         }
 
     }
