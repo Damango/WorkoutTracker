@@ -70,14 +70,20 @@
     margin-bottom: 15px;
     color: black;
     border-radius: 2px;
+    width: auto;
+
+    transition: 0.3s;
 }
+
+
 
 .add-set-button{
    
     font-family: "Fira Sans";
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     border-style: none;
+    width: 30px;
 
 }
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Exercise.css"
+import { useSpring, animated } from "react-spring"
 import axios from 'axios'
 const Exercise = (props) => {
 
@@ -8,6 +9,11 @@ const Exercise = (props) => {
     const [setCount, setSetCount] = useState()
     const [theSets, setTheSets] = useState(props.data.sets)
     const [addSet, setAddSet] = useState(0)
+    const [symbol, setSymbol] = useState(' + ')
+
+
+
+
 
     let totalSets = props.data.sets.length
 
@@ -18,6 +24,7 @@ const Exercise = (props) => {
             volume += (theSets[i].reps * theSets[i].weight);
         }
         setTotalVolume(volume);
+
     }, [])
 
     function calculateVolume() {
@@ -76,9 +83,11 @@ const Exercise = (props) => {
     function addSetSwitch() {
         if (addSet === 0) {
             setAddSet(1)
+            setSymbol(" - ")
         }
         else {
             setAddSet(0)
+            setSymbol(" + ")
         }
 
     }
@@ -96,8 +105,8 @@ const Exercise = (props) => {
             <div className="total-volume">Volume:  {totalVolume}</div>
         </div>
         <div className="sets-editor-container">
-            {theSets.map((set) => <div className="set-block">{set.weight + ' x ' + set.reps}</div>)}
-            <button className="add-set-button" onClick={addSetSwitch}>+</button>
+            {theSets.map((set) => <div className='set-block'>{set.weight + ' + ' + set.reps}</div>)}
+            <button className="add-set-button" onClick={addSetSwitch}>{symbol}</button>
             {renderAddSet()}
         </div>
     </div>);
