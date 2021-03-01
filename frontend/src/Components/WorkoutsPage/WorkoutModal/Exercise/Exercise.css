@@ -6,10 +6,11 @@
     transform: translateX(-50%);
     background-color: #2f3640;
     width: 100%;
-    height: 120px;
+    height: auto;
     color: white;
     padding: 15px;
     margin-top: 20px;
+    transition: 0.3s;
 }
 
 .exercise-title{
@@ -43,16 +44,20 @@
     font-size: 19px;
 }
 
+.exercise-header{
+    margin-bottom: 40px;
+}
+
 .exercise-header div{
     display: inline-block;
 }
 
 .sets-editor-container{
-    position: absolute;
-
-    bottom: 20px;
-    height: 50px;
+    position: relative;
     display: block;
+    bottom: 20px;
+
+  
 }
 
 
@@ -62,23 +67,25 @@
     padding: 10px;
     text-align: center;
     margin-right: 15px;
+    margin-bottom: 15px;
     color: black;
     border-radius: 2px;
 }
 
 .add-set-button{
-    position: absolute;
+   
     font-family: "Fira Sans";
     font-weight: bold;
     font-size: 20px;
     border-style: none;
-    top: 50%;
-    transform: translateY(-50%);
+
 }
 
 .set-add-container{
-    display: inline-block;
-    margin-left: 30px;
+    position: relative;
+    margin-top: 50px;
+   
+  
 }
 
 
@@ -97,5 +104,5 @@
 .set-input-container span{
     display: block;
     position: absolute;
-    top: -20px;
+    top: -30px;
 }
